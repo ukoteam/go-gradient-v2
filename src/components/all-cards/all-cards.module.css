@@ -1,0 +1,32 @@
+
+.all_cards {
+    width: 100%;
+    max-width: 1153px;
+    margin-top: 50px;
+    display: grid;
+    row-gap: 35px;
+    column-gap: 35px;
+    grid-template-columns: repeat(4, 4fr);
+}
+
+
+@media (max-width: 1200px) {
+    .all_cards {
+        max-width: 856px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .all_cards {
+        max-width: 559px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .all_cards {
+        max-width: 262px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,74 @@
+
+
+.card {
+    width: 100%;
+    max-width: 262px;
+    min-height: 360px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    border: 1px solid #001E64;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.4s;
+}
+
+.card__logo {
+    padding: 4px;
+    min-height: 205px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.flag {
+    width: 28px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.card__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card__link_button {
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 8px !important;
+    background-color: #001E64;
+    /* background: linear-gradient(90deg, rgba(20,155,215,1) 0%, rgba(175,200,11,1) 100%); */
+    color: white;
+    font-family: "HelventicaNeueCyr";
+    font-weight: 200;
+    border-radius: 12px;
+    border: none;
+}
+
+.card__link_button:hover {
+    background: linear-gradient(56deg, rgba(0,30,100,1) 0%, rgba(20,155,215,1) 50%, rgba(175,200,11,1) 100%);
+    font-weight: 300;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+.card__info_button {
+    border: 1px solid #001E64;
+    border-radius: 12px;
+    padding-right: 12px;
+    padding-bottom: 6px !important;
+    padding-left: 12px;
+    font-family: 'Inter';
+    color: #001E64;
+    background: none;
+    font-size: 18px;
+}
+
+.card__info_button:hover {
+    background-color: #001E64;
+    color: white;
+}

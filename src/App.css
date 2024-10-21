@@ -1,8 +1,104 @@
+/* Шрифты */
+@font-face {
+    font-family: 'Inter';
+    src: url("./fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'HelventicaNeueCyr';
+    src: url("./fonts/HelveticaNeueCyr-Light.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'HelventicaNeueCyr';
+    src: url("./fonts/HelveticaNeueCyr-Roman.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'HelventicaNeueCyr';
+    src: url("./fonts/HelveticaNeueCyr-Medium.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'HelventicaNeueCyr';
+    src: url("./fonts/HelveticaNeueCyr-Bold.ttf");
+    font-weight: 500;
+}
+
+html {
+  background: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: rgba(75, 162, 221, 0.50);
+}
+
+h1 {
+  font-family: 'HelventicaNeueCyr';
+  font-weight: 400;
+  font-size: 32px;
+  color: #001E64;
+}
+
+h2 {
+  font-family: 'HelventicaNeueCyr';
+  font-weight: 400;
+  font-size: 28px;
+  color: #001E64;
+}
+
+h3 {
+  font-family: 'HelventicaNeueCyr';
+  font-weight: 300;
+  font-size: 22px;
+  color: #001E64;
+  line-height: 26px;
+}
+
+button {
+  font-size: 18px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  max-width: 1152px;
+  margin-top: 69px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #001E64;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'HelventicaNeueCyr';
+  font-weight: 200;
+  margin-top: 5px;
+}
+
+span {
+  font-weight: 500  !important;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,7 +107,7 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +131,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Ползунок прокрутки */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 4px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgba(20,155,215,1) 0%, rgba(175,200,11,1) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #001E64;
 }

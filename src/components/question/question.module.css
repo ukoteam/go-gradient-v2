@@ -1,0 +1,121 @@
+.question {
+    width: 100%;
+    max-width: 880px;
+    min-height: 54px;
+    background: linear-gradient(56deg, rgba(0,30,100,1) 0%, rgba(20,155,215,1) 50%, rgba(175,200,11,1) 100%);
+    padding: 3px;
+    border-radius: 15px;
+    margin-top: 17px;
+
+    transition: all 1s;
+}
+
+.question__content {
+    width: 100%;
+    max-width: 874px;
+    /* min-height: 48px; */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question__content__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question__content__header h2 {
+    font-size: 28px;
+    width: 100%;
+    max-width: 783px;
+    text-align: left;
+}
+
+.question__content__header div {
+    max-width: 38px;
+    min-height: 38px;
+}
+
+.question__content__header_plus {
+    position: relative;
+    top: -14px;
+    transition: all 0.5s;
+}
+
+.question__content__header_minus {
+    position: relative;
+    top: 6px;
+    
+}
+
+.question__content__body  {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    
+}
+
+.question__content__body p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.question__content__body_image {
+    width: 100%;
+    height: 100%;
+    max-width: 874px;
+    max-height: 300px;
+    object-fit: contain;
+
+    margin-top: 10px;
+}
+
+.question__content__body_links a {
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    background: linear-gradient(56deg, rgba(0,30,100,1) 0%, rgba(20,155,215,1) 50%, rgba(175,200,11,1) 100%);
+    font-family: "HelventicaNeueCyr", sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.question__content__body_links {
+    display: flex;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 400px) {
+    .question__content__header h2 {
+        font-size: 20px;
+        width: 100%;
+        max-width: 783px;
+        text-align: left;
+    }
+
+    .question__content__body p {
+        text-align: left;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+}
