@@ -2,11 +2,11 @@
 
 .mainTitle {
     width: 100%;
-    max-width: 372px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 35px;
-    padding-left: 35px;
+    max-width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 28px;
+    padding-left: 28px;
     background: linear-gradient(56deg, rgba(0,30,100,1) 0%, rgba(20,155,215,1) 50%, rgba(175,200,11,1) 100%);
     border-radius: 23px;
     margin-top: 45px;
@@ -15,6 +15,7 @@
 
 .mainTitle__h1 {
     width: 100%;
+    font-size: 27px;
     max-width: 302px;
     text-align: center;
     text-transform: uppercase;
