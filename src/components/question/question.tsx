@@ -33,7 +33,7 @@ export const Question: FunctionComponent<TPropsType> = (props) => {
                         <div key={index} className={styles.question__content__body_steps}>
                             {item.text && <p>{item.text}</p>}
                             {item.links && <div className={styles.question__content__body_links}>
-                                    {item.links.map((item2, index) => <a href={item2.link} key={index}>{item2.capture}</a>)}
+                                    {item.links.map((item2, index) => <a href={item2.link} key={index} target="_blank">{item2.capture}</a>)}
                                 </div>}
                             {item.image && <img className={styles.question__content__body_image} src={item.image} alt="Screenshot" />}
                         </div>)

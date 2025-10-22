@@ -13,6 +13,10 @@ type TCardPageType = {
     background: string;
     admin: TAdminType;
     questions?: Array<TQuestionType>;
+    link?: {
+        text: string;
+        link: string;
+    }
 }
 
 type TAdminType = {

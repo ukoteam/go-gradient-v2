@@ -23,11 +23,13 @@ export const ServicePage: FunctionComponent = () => {
                 
                 <p className={styles.servicePage__description}>{item.cardPage.description}</p>
 
-                {item.cardPage.admin.forConnection && <a href={`mailto:${item.cardPage.admin.forConnection}`} className={styles.servicePage__forConnection}>Запросить подключение</a>}
+                {item.cardPage.admin.forConnection && <a href={`https://newmail2.gradient.ru:10443/owa/?ae=Item&a=New&t=IPM.Note&email=mailto%3A${item.cardPage.admin.forConnection}`} className={styles.servicePage__forConnection} target="_blank">Запросить подключение</a>}
+
+                {item.cardPage.link && <a href={`${item.cardPage.link.link}`} className={styles.servicePage__forConnection} target="_blank">{item.cardPage.link.text}</a>}
 
                 {
                     item.cardPage.questions !== undefined ? <>
-                        <h1 className={styles.servicePage__title}>Часто задаваемые вопросы</h1>
+                        <h1 className={styles.servicePage__title_question}>Часто задаваемые вопросы</h1>
                         {
                             item.cardPage.questions.map(item2 => <Question question={item2} key={item.id} />)
                         }
@@ -40,7 +42,7 @@ export const ServicePage: FunctionComponent = () => {
 
                         <div>
                             <h2>{item.cardPage.admin.name}</h2>
-                            <a href={`mailto:${item.cardPage.admin.mailTo}`}>Обратиться</a>
+                            <a href={`https://newmail2.gradient.ru:10443/owa/?ae=Item&a=New&t=IPM.Note&email=mailto%3A${item.cardPage.admin.mailTo}`} target="_blank">Обратиться</a>
                         </div>
                     </div>
                 }

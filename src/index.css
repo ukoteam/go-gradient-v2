@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  /* background: url('./images/body-snow.png') no-repeat, url('./images/main-background.svg') center/cover repeat-y; */
   background: url('./images/main-background.svg') center/cover repeat-y;
 }
 

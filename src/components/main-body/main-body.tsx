@@ -16,11 +16,11 @@ export const MainBody: FunctionComponent = () => {
         let storage = localStorage.getItem("favoriteServices");
         storage && dispatch(uploadFavoriteService(storage));
 
-        favoriteCards && dispatch(setFavoriteFlags());
+        // favoriteCards && dispatch(setFavoriteFlags());
 
-        return (() => {
-            dispatch(setInitialFavoriteService);
-        })
+        // return (() => {
+        //     dispatch(setInitialFavoriteService);
+        // })
     }, [dispatch])
 
     return (

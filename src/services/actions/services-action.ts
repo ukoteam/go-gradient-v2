@@ -69,7 +69,9 @@ export const uploadFavoriteService = (storage: string) => {
     return function(dispatch: AppDispatch) {
         let storageArray = storage.split(", ").filter(item => data.cards.find(item2 => item2.id === item) !== undefined);
 
-        storageArray.length && dispatch(uploadInitialFavoriteService(storageArray))
+        storageArray.length && dispatch(uploadInitialFavoriteService(storageArray));
+
+        dispatch(setFavoriteFlags())
 
         // storageArray.map(item => dispatch(addFavoriteService(item)))
     }
